@@ -7,3 +7,6 @@ class TestPub(unittest.TestCase):
 
     def test_pub_has_name(self):
         self.assertEqual("Lucky Pub", self.pub.name)
+
+    def test_pub_has_cash(self):
+        self.assertEqual(1000, self.pub.till)
