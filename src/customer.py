@@ -5,6 +5,7 @@ class Customer:
         self.name = name
         self.wallet = 100
         self.drinks = 0
+        self.age = 21
     
     def add_drink(self, drink):
         self.drinks += 1
