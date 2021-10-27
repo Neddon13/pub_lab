@@ -8,3 +8,6 @@ class TestCustomer(unittest.TestCase):
 
     def test_customer_has_name(self):
         self.assertEqual("Sam", self.customer.name)
+    
+    def test_customer_has_wallet(self):
+        self.assertEqual(100, self.customer.wallet)
