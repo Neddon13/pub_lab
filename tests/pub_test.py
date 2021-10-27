@@ -1,6 +1,7 @@
 import unittest
 from src.pub import Pub
 from src.drink import Drink
+from src.customer import Customer
 
 class TestPub(unittest.TestCase):
     def setUp(self):
@@ -15,3 +16,7 @@ class TestPub(unittest.TestCase):
     
     def test_pub_has_drink(self):
         self.assertEqual("wine", self.drink.beverage)
+
+    def test_pub_till_can_increase(self):
+        self.pub.add_to_till(25)
+        self.assertEqual(1025, self.pub.till)
