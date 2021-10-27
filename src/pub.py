@@ -11,3 +11,5 @@ class Pub:
     def check_age(self, age):
         if age >= 18:
             return True
+        else:
+            return False

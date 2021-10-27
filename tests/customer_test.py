@@ -6,7 +6,7 @@ class TestCustomer(unittest.TestCase):
     
     def setUp(self):
         self.customer = Customer("Sam", 100)
-        self.drinks = Drink("wine", 25)
+        self.drink = Drink("wine", 25, 7)
 
     def test_customer_has_name(self):
         self.assertEqual("Sam", self.customer.name)
@@ -14,9 +14,9 @@ class TestCustomer(unittest.TestCase):
     def test_customer_has_wallet(self):
         self.assertEqual(100, self.customer.wallet)
     
-    def test_can_add_beverage(self):
-        self.customer.add_drink(self.drinks)
-        self.assertEqual(1, self.customer.drinks)
+    def test_can_add_drunkeness(self):
+        self.customer.add_drunkeness(self.drink.alcohol_level)
+        self.assertEqual(7, self.customer.drunkeness)
 
     def test_can_reduce_wallet(self):
         self.customer.reduce_wallet(25)
