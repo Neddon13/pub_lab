@@ -1,5 +1,5 @@
 class Drink:
-    def __init__(self, beverage, price, WAYYYYYYYYY):
+    def __init__(self, beverage, price):
         self.beverage = beverage
         self.price = price
-        self.WAYYYYYYYYY = WAYYYYYYY!!!!!!!!!
+    
